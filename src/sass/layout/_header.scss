@@ -3,6 +3,7 @@
   height: auto;
   /* background-color: transparent; */
   padding-top: 37px;
+  background-color: $color-pink-1;
 
   &__components {
     @extend %flex-space-between;

@@ -1,10 +1,14 @@
-.header__logo {
-  text-decoration: none;
-  width: 100%;
-  height: auto;
+/* Header */
+.header {
+  &__logo{
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  &__icon-logo {
+    width: 199px;
+    height: 50px;
+  }
 }
 
-.header__icon-logo {
-  width: 199px;
-  height: 50px;
-}
