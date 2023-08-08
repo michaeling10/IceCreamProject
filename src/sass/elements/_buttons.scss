@@ -1,0 +1,20 @@
+.header__right-section__btn-buy-now {
+
+  /* Button */
+  @extend %flex-center;
+  width: 159px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  background: $color-white;
+
+  /* Type text */
+  color: $color-red-1;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  gap: 12px;
+}

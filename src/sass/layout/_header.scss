@@ -1,0 +1,14 @@
+.header {
+  @extend %flex-center;
+  height: auto;
+  /* background-color: transparent; */
+  padding-top: 37px;
+
+  &__components {
+    @extend %flex-space-between;
+  }
+
+  &__middle-section {
+    @extend %flex-space-between;
+  }
+}
