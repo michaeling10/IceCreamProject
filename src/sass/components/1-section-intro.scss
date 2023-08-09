@@ -72,10 +72,9 @@
   cursor: pointer;
 }
 
-
+//milk
 .intro__milk {
   display: flex;
-  align-items: bottom;
 }
 
 .intro__milk__img {
@@ -86,13 +85,14 @@
 .intro__milk__info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   text-align: left;
   width: 200px;
   @extend %dmSans-400;
   color: $color-white;
   font-size: 14px;
   line-height: 1.4;
+  padding-bottom: 24px;
 }
 
 .intro__milk__info-benefit {
@@ -103,5 +103,15 @@
   display: flex;
   justify-content: left;
   flex-direction: column;
-  padding-bottom: 24px;
+  width: 26px;
+  height: 26px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+}
+
+.intro__milk-info-btn-img{
+    width: 100%;
+    height: 100%;
 }
