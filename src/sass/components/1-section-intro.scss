@@ -1,0 +1,107 @@
+.section-intro {
+  @extend %flex-center;
+  background-color: $color-pink-1;
+  height: 664px;
+  width: auto;
+}
+
+.intro__components {
+  @extend %flex-space-between;
+}
+
+.intro {
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+
+    &-1 {
+      @extend %titan-400;
+      letter-spacing: 1.2px;
+      font-size: 38px;
+      color: $color-white;
+    }
+
+    &-2 {
+      @extend %titan-400;
+      letter-spacing: 2.32px;
+      font-size: 58px;
+      color: $color-red-1;
+      line-height: 0.95;
+    }
+  }
+}
+
+//button
+
+.intro__buttons {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 12px;
+  padding-left: 0;
+}
+
+.intro__button__product {
+  width: 107px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background: $color-red-1;
+  @extend %dmSans-400;
+  color: $color-white;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.intro__button__made {
+  width: 138px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background: $color-white;
+  @extend %dmSans-400;
+  color: $color-red-1;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.intro__milk {
+  display: flex;
+  align-items: bottom;
+}
+
+.intro__milk__img {
+  width: 213px;
+  height: 216px;
+}
+
+.intro__milk__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 200px;
+  @extend %dmSans-400;
+  color: $color-white;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.intro__milk__info-benefit {
+  margin: 0 0 20px;
+}
+
+.intro__milk__info-btn {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding-bottom: 24px;
+}
