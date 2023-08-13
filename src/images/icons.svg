@@ -36,4 +36,12 @@
   <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 12" id="dots-menu-section-4">
     <circle cx="6" cy="6" r="6" fill="#D9D9D9"></circle>
   </symbol>
+  
+   <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 288 2" id="separator-lines-section-5">
+    <path stroke="#E1E1E1" d="M0 1h288"></path>
+  </symbol>
+  
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 10" id="greater-than-section-5">
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1.616 1 4.428 4-4.428 4"></path>
+  </symbol>
 </svg>
