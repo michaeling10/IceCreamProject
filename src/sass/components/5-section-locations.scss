@@ -2,20 +2,21 @@
   display: flex;
   justify-content: center;
   background-color: $color-pink-2;
-  height: 877px;
+  height: 684px;
   width: auto;
 }
 
 .locations_section {
   margin: 0 0 60px;
+  height: 558px;
 }
 
 .locations_components {
   display: flex;
   flex-direction: column;
+  height: auto;
   position: relative;
   top: -99px;
-  height: auto;
 }
 
 .locations__list {
@@ -85,7 +86,7 @@
 }
 
 .location-card__separator {
-  height: 6px;
+  height: 2px;
   margin: 0;
   padding: 0;
   @extend %flex-center;
