@@ -117,6 +117,8 @@
   }
 
   &-girl {
+    display: flex;
+    justify-content: end;
     width: 304px;
     height: 241px;
   }
