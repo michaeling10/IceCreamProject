@@ -2,6 +2,205 @@
   display: flex;
   justify-content: center;
   background-color: $color-pink-2;
-  height: 877px;
+  height: 684px;
   width: auto;
+}
+
+.locations_section {
+  margin: 0 0 60px;
+  height: 558px;
+}
+
+.locations_components {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  position: relative;
+  top: -99px;
+}
+
+.locations__list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+.location_card {
+  width: 368px;
+  list-style: none;
+  background-color: $color-white;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+}
+
+.location_card__margin {
+  padding: 40px;
+}
+
+.location_card__title-1 {
+  color: $color-white;
+  @extend %dmSans-500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.64px;
+  border-radius: 6px;
+  background: #f0d1a5;
+  width: 75.103px;
+  height: 28px;
+  @extend %flex-center;
+  margin: 0 0 32px;
+}
+
+.location_card__title-2 {
+  color: $color-white;
+  @extend %dmSans-500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.64px;
+  border-radius: 6px;
+  background: #c2e297;
+  width: 138px;
+  height: 28px;
+  @extend %flex-center;
+  margin: 0 0 32px;
+}
+
+.location-card__city {
+  color: #000;
+  @extend %dmSans-500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.64px;
+  margin: 0 0 8px;
+}
+
+.location-card__services {
+  color: #907e82;
+  @extend %dmSans-500;
+  font-size: 16px;
+  line-height: 1.83;
+  letter-spacing: 0.64px;
+  margin: 0 0 32px;
+}
+
+.location-card__separator {
+  height: 2px;
+  margin: 0;
+  padding: 0;
+  @extend %flex-center;
+  &__line-svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.location-card__schedule {
+  margin: 32px 0;
+}
+
+.location-card__schedule-list {
+  list-style: none;
+  padding: 0;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-card__schedule-days {
+  color: #000;
+  @extend %dmSans-500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.64px;
+  margin: 0;
+}
+
+.location-card__schedule-hours {
+  color: #ffa5ba;
+  @extend %dmSans-500;
+  font-size: 16px;
+  line-height: 1.86;
+  margin: 0;
+}
+
+.location-card__contact-info {
+  margin: 32px 0 0;
+}
+
+.location-card__contact-info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.location-card__contact-item {
+  @extend %dmSans-500;
+  font-size: 16px;
+  line-height: 1.83;
+}
+
+.location-card__contact-item a {
+  text-decoration: none;
+  color: #907e82;
+}
+
+.locations__buttons {
+  @extend %flex-center;
+}
+
+.locations__buttons-list {
+  @extend %flex-center;
+  flex-direction: row;
+  list-style: none;
+  gap: 12px;
+}
+
+.locations__buttons-btn-1__btn {
+  @extend %flex-center;
+  flex-direction: row;
+  border-radius: 22px;
+  background: #d41342;
+  width: 198px;
+  height: 44px;
+  cursor: pointer;
+  border: none;
+  gap: 12px;
+
+  /*Text*/
+  color: $color-white;
+  @extend %dmSans-700;
+  text-align: center;
+  font-size: 16px;
+}
+
+.locations__buttons-btn-1__btn-icon,
+.locations__buttons-btn-2__btn-icon {
+  width: 8px;
+  height: 12px;
+  @extend %flex-center;
+}
+
+.locations__buttons-btn-1__btn-svg,
+.locations__buttons-btn-1__btn-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.locations__buttons-btn-2__btn {
+  @extend %flex-center;
+  flex-direction: row;
+  border-radius: 22px;
+  background: $color-white;
+  width: 198px;
+  height: 44px;
+  cursor: pointer;
+  border: none;
+  gap: 12px;
+
+  /*Text*/
+  color: #d41342;
+  @extend %dmSans-700;
+  text-align: center;
+  font-size: 16px;
 }
