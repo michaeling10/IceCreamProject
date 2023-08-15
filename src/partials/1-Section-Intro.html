@@ -15,11 +15,27 @@
         </li>
       </ul>
       <div class="intro__milk">
-        <img
-          class="intro__milk__img"
-          src="./images/section_1_intro/section-1-milk.png"
-          alt="section-1-milk"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/section_1_intro/section-1-milk-desktop.png    1x,
+              ./images/section_1_intro/section-1-milk-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/section_1_intro/section-1-milk-tablet.png    1x,
+              ./images/section_1_intro/section-1-milk-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            class="intro__milk__img"
+            src="./images/section_1_intro/section-1-milk-desktop.png"
+            alt="section-1-milk"
+          />
+        </picture>
         <div class="intro__milk__info">
           <p class="intro__milk__info-benefit">
             Indulge in a scoop of ice cream made with passion and treat your
@@ -37,11 +53,34 @@
     </div>
     <div class="intro__right">
       <div class="intro__images">
-        <img
-          class="intro__images-ice-cream"
-          src="./images/section_1_intro/section-1-ice-cream.png"
-          alt="section-1-ice-cream"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/section_1_intro/section-1-ice-cream-desktop.png    1x,
+              ./images/section_1_intro/section-1-ice-cream-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/section_1_intro/section-1-ice-cream-tablet.png    1x,
+              ./images/section_1_intro/section-1-ice-cream-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/section_1_intro/section-1-ice-cream-mobile.png    1x,
+              ./images/section_1_intro/section-1-ice-cream-mobile@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="intro__images-ice-cream"
+            src="./images/section_1_intro/section-1-ice-cream-desktop.png "
+            alt="section-1-ice-cream"
+          />
+        </picture>
         <img
           class="intro__images-circle-back"
           src="./images/section_1_intro/section-1-circle-back.png"
@@ -71,9 +110,30 @@
             <p class="intro__numbers-property">food trucks</p>
           </li>
         </ul>
+        <picture>
+          <source
+            srcset="
+              ./images/section_1_intro/section-1-girl-desktop.png    1x,
+              ./images/section_1_intro/section-1-girl-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/section_1_intro/section-1-girl-tablet.png    1x,
+              ./images/section_1_intro/section-1-girl-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />  
+          <img
+            class="intro__images-girl"
+            src="./images/section_1_intro/section-1-girl-desktop.png"
+            alt="section-1-girl"
+          />
+        </picture>
         <img
           class="intro__images-girl"
-          src="./images/section_1_intro/section-1-girl.png"
+          src="./images/section_1_intro/section-1-girl-desktop.png"
           alt="section-1-girl"
         />
       </div>
