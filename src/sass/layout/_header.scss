@@ -1,11 +1,12 @@
 .header {
   @extend %flex-center;
   height: auto;
-  /* background-color: transparent; */
-  padding-top: 37px;
   background-color: $color-pink-1;
 
   &__components {
+    position: absolute;
+    z-index: 2;
+    top: 37px;
     @extend %flex-space-between;
   }
 
