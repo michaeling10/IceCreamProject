@@ -1,0 +1,16 @@
+.header {
+  @extend %flex-center;
+  height: auto;
+  background-color: $color-pink-1;
+
+  &__components {
+    position: absolute;
+    z-index: 2;
+    top: 37px;
+    @extend %flex-space-between;
+  }
+
+  &__middle-section {
+    @extend %flex-space-between;
+  }
+}
