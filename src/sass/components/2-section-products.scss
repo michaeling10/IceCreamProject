@@ -2,8 +2,16 @@
   display: flex;
   justify-content: center;
   background-color: $color-white;
-  height: 1053px;
   width: auto;
+  height: 2087px;
+
+  @media screen and (min-width: 768px) {
+    height: 854px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 1053px;
+  }
 }
 
 .product_components {
@@ -16,20 +24,42 @@
     color: #ffa5ba;
     text-align: center;
     @extend %titan-400;
-    font-size: 30px;
     font-weight: 400;
     letter-spacing: 1.2px;
-    margin: 0 0 16px;
-    padding-top: 61px;
+    margin: 0 0 15px;
+    padding-top: 60px;
+    font-size: 18px;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 0 18px;
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: 0 0 16px;
+      font-size: 30px;
+    }
   }
 
   &-2 {
     color: #d41443;
     text-align: center;
     @extend %titan-400;
-    font-size: 58px;
-    letter-spacing: 3.48px;
-    margin: 0 0 261px;
+    font-size: 34px;
+    letter-spacing: 1.36px;
+    margin: 0 0 8px;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 0 158px;
+      font-size: 48px;
+      letter-spacing: 1.92px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: 0 0 281px;
+      font-size: 58px;
+      letter-spacing: 3.48px;
+    }
   }
 }
 
@@ -37,67 +67,132 @@
   @extend %flex-center;
   flex-direction: row;
   list-style: none;
-  gap: 32px;
+  gap: 140px;
   margin: 0;
   padding: 0;
+
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
 }
 
 .product-item {
   &-1 {
-    width: 368px;
-    height: 535px;
+    width: 280px;
+    height: 489px;
     border-radius: 24px;
     background: #ffb8ca;
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      width: 224px;
+      height: 473px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 368px;
+      height: 535px;
+    }
   }
 
   &-2 {
-    width: 368px;
-    height: 535px;
+    width: 280px;
+    height: 489px;
     border-radius: 24px;
     background: #f0d1a5;
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      width: 224px;
+      height: 473px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 368px;
+      height: 535px;
+    }
   }
-  
+
   &-3 {
-    width: 368px;
-    height: 535px;
+    width: 280px;
+    height: 489px;
     border-radius: 24px;
     background: #c2e297;
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      width: 224px;
+      height: 473px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 368px;
+      height: 535px;
+    }
   }
 }
 
-
 .product-item__image {
-  width: 368px;
-  height: 133px;
+  width: 280px;
+  height: 280px;
+
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 86px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    height: 394px;
+  }
 
   &-img {
     position: relative;
-    top: -261px;
-    height: 394px;
+    top: -140px;
+    height: 280px;
+
+    @media screen and (min-width: 768px) {
+      top: -138px;
+      height: 224px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: -261px;
+      height: 394px;
+    }
   }
 }
 
-
-.product-item{
-
-  &__title{
+.product-item {
+  &__title {
     color: $color-white;
     text-align: center;
     @extend %titan-400;
-    font-size: 30px;
-    letter-spacing: 1.2px;
-    margin: 32px 0;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    margin: 20px 0 32px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+      letter-spacing: 0.8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      letter-spacing: 1.2px;
+    }
   }
-  
+
   &__description {
     color: $color-white;
     text-align: center;
@@ -108,20 +203,33 @@
     width: 304px;
     height: 134px;
     margin: 32px 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      letter-spacing: 0.56px;
+      width: 188px;
+      height: 150px;
+      margin: 32px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.64px;
+      width: 304px;
+      height: 134px;
+      margin: 32px 0;
+    }
   }
 }
 
 .product-item__separator {
-  width: 24.836px;
+  width: 26px;
   height: 6px;
   @extend %flex-center;
-  
+
   &__three-dots-svg {
     width: 100%;
     height: 100%;
   }
 }
-
-
-
-
