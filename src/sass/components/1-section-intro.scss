@@ -3,8 +3,16 @@
   justify-content: center;
   align-items: end;
   background-color: $color-pink-1;
-  height: 664px;
+  height: 502px;
   width: auto;
+
+  @media screen and (min-width: 768px) {
+    height: 416px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 664px;
+  }
 }
 
 .intro__components {
@@ -13,6 +21,17 @@
   height: 100%;
   position: relative;
   z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
 }
 
 .intro {
@@ -28,9 +47,19 @@
 
     &-1 {
       @extend %titan-400;
-      letter-spacing: 1.2px;
-      font-size: 38px;
+      letter-spacing: 1.04px;
+      font-size: 26px;
       color: $color-white;
+
+      @media screen and (min-width: 768px) {
+        letter-spacing: 0.88px;
+        font-size: 22px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        letter-spacing: 1.2px;
+        font-size: 38px;
+      }
     }
 
     &-2 {
@@ -38,7 +67,17 @@
       letter-spacing: 2.32px;
       font-size: 58px;
       color: $color-red-1;
-      line-height: 0.95;
+      line-height: 0.965;
+
+      @media screen and (min-width: 768px) {
+        letter-spacing: 1.36px;
+        font-size: 34px;
+        line-height: 0.905;
+      }
+
+      @media screen and (min-width: 1200px) {
+        line-height: 0.905;
+      }
     }
   }
 }
@@ -46,11 +85,29 @@
 //milk
 .intro__milk {
   display: flex;
-  padding: 0 0 60px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 0 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 0 60px;
+  }
 
   &__img {
-    width: 213px;
-    height: 216px;
+    @media screen and (min-width: 768px) {
+      width: 152px;
+      height: 154px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 213px;
+      height: 216px;
+    }
   }
 
   &__info {
@@ -58,16 +115,32 @@
     flex-direction: column;
     justify-content: end;
     text-align: left;
-    width: 200px;
     @extend %dmSans-400;
     color: $color-white;
-    font-size: 14px;
-    line-height: 1.4;
-    padding-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      width: 114px;
+      font-size: 8px;
+      line-height: 1.5;
+      padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 200px;
+      font-size: 14px;
+      line-height: 1.4;
+      padding-bottom: 24px;
+    }
   }
 
   &__info-benefit {
-    margin: 0 0 20px;
+    @media screen and (min-width: 768px) {
+      margin: 0 0 7px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: 0 0 20px;
+    }
   }
 }
 
@@ -81,69 +154,147 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
+
   &-list {
-    list-style: none;
-    text-align: right;
-    margin: 0;
-    padding: 0 18px 90px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      gap: 17px;
+      padding: 0 8px 67px 0;
+      list-style: none;
+      text-align: right;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 18px;
+      padding: 0 18px 90px 0;
+      list-style: none;
+      text-align: right;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &-number {
     @extend %titan-400;
     color: $color-red-1;
-    font-size: 46px;
-    letter-spacing: 1.84px;
     margin: 0 0 2px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 28px;
+      letter-spacing: 1.12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 46px;
+      letter-spacing: 1.84px;
+    }
   }
 
   &-property {
     @extend %dmSans-400;
     color: $color-white;
-    font-size: 14px;
     margin: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
 }
 
 .intro__images {
   &-ice-cream {
-    width: 236px;
-    height: 557px;
-    margin-right: 8px;
     display: flex;
     justify-content: end;
+    width: 171px;
+    height: 410px;
+
+    @media screen and (min-width: 768px) {
+      width: 143px;
+      height: 336px;
+      margin-right: 81px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 236px;
+      height: 557px;
+      margin-right: 8px;
+    }
   }
 
   &-girl {
     display: flex;
     justify-content: end;
-    width: 304px;
-    height: 241px;
+
+    @media screen and (min-width: 768px) {
+      width: 190px;
+      height: 150px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 304px;
+      height: 241px;
+    }
   }
 
   &-circle-back {
     position: absolute;
     z-index: -1;
-    top: 54px;
-    right: 149px;
+
+    @media screen and (min-width: 768px) {
+      width: 335px;
+      top: 43px;
+      right: 185px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 534px;
+      top: 54px;
+      right: 149px;
+    }
   }
 
   &-circles-white {
     position: absolute;
     z-index: -1;
     list-style: none;
-    top: 152px;
-    right: 16px;
     display: flex;
     flex-direction: column;
-    gap: 62px;
+
+    @media screen and (min-width: 768px) {
+      top: 77px;
+      right: 32px;
+      gap: 44px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 152px;
+      right: 16px;
+      gap: 62px;
+    }
   }
 
   &-circle-white {
-    width: 30px;
-    height: 30px;
+    @media screen and (min-width: 768px) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 30px;
+      height: 30px;
+    }
+
     &-icon {
       width: 100%;
       height: 100%;
