@@ -1,0 +1,46 @@
+/* Header */
+.header__right-section__btn-buy-now:hover,
+.header__right-section__btn-buy-now:focus {
+  /* Button */
+  background-color: $color-red-1;
+
+  /* Type text */
+  color: $color-white;
+}
+
+/* Navbar */
+
+.navbar {
+  &__link:hover,
+  &__link:focus {
+    color: $color-red-1;
+  }
+}
+
+/* 1  - Section */
+.intro__button {
+  &__product:hover,
+  &__product:focus {
+    background-color: $color-red-1;
+    color: $color-white;
+  }
+
+  &__made:hover,
+  &__made:focus {
+    background-color: $color-red-1;
+    color: $color-white;
+  }
+}
+
+/* 3  - Section */
+.made__info-description__btn:hover,
+.made__info-description__btn:focus {
+  background-color: $color-red-1;
+  /* text */
+  color: $color-white;
+
+  &-svg {
+    width: 100%;
+    height: 100%;
+  }
+}
