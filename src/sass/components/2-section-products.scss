@@ -47,7 +47,7 @@
     @extend %titan-400;
     font-size: 34px;
     letter-spacing: 1.36px;
-    margin: 0 0 8px;
+    margin: 0 0 148px;
 
     @media screen and (min-width: 768px) {
       margin: 0 0 158px;
@@ -65,7 +65,7 @@
 
 .products-list {
   @extend %flex-center;
-  flex-direction: row;
+  flex-direction: column;
   list-style: none;
   gap: 140px;
   margin: 0;
@@ -73,10 +73,12 @@
 
   @media screen and (min-width: 768px) {
     gap: 16px;
+    flex-direction: row;
   }
 
   @media screen and (min-width: 1200px) {
     gap: 32px;
+    flex-direction: row;
   }
 }
 
@@ -144,7 +146,7 @@
 
 .product-item__image {
   width: 280px;
-  height: 280px;
+  height: 140px;
 
   @media screen and (min-width: 768px) {
     width: 224px;
@@ -197,11 +199,11 @@
     color: $color-white;
     text-align: center;
     @extend %dmSans-700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.76;
-    letter-spacing: 0.64px;
-    width: 304px;
-    height: 134px;
+    letter-spacing: 0.56px;
+    width: 216px;
+    height: auto;
     margin: 32px 0;
 
     @media screen and (min-width: 768px) {
