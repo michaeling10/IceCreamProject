@@ -21,7 +21,7 @@
 
 .product-title {
   &-1 {
-    color: #ffa5ba;
+    color: $color-pink-3;
     text-align: center;
     @extend %titan-400;
     font-weight: 400;
@@ -42,7 +42,7 @@
   }
 
   &-2 {
-    color: #d41443;
+    color: $color-red-1;
     text-align: center;
     @extend %titan-400;
     font-size: 34px;
@@ -87,7 +87,7 @@
     width: 280px;
     height: 489px;
     border-radius: 24px;
-    background: #ffb8ca;
+    background: $color-pink-1;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -127,7 +127,7 @@
     width: 280px;
     height: 489px;
     border-radius: 24px;
-    background: #c2e297;
+    background: $color-green-1;
     display: flex;
     align-items: center;
     flex-direction: column;

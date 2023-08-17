@@ -53,7 +53,7 @@
 
 .made__title {
   &-1 {
-    color: #ffa5ba;
+    color: $color-pink-3;
     text-align: center;
     @extend %titan-400;
     font-size: 18px;
@@ -69,7 +69,7 @@
   }
 
   &-2 {
-    color: #d41443;
+    color: $color-red-1;
     text-align: center;
     @extend %titan-400;
     font-size: 34px;
@@ -150,7 +150,7 @@
     }
 
     &-1 {
-      color: #000;
+      color: $color-black;
       @extend %dmSans-500;
       font-size: 12px;
       line-height: 1.62;
@@ -176,7 +176,7 @@
     }
 
     &-2 {
-      color: #907e82;
+      color: $color-red-2;
       @extend %dmSans-500;
       font-size: 12px;
       line-height: 1.62;
@@ -235,7 +235,7 @@
 }
 
 .made__data-number {
-  color: #d41443;
+  color: $color-red-1;
   text-align: left;
   @extend %titan-400;
   font-size: 36px;
@@ -257,7 +257,7 @@
 
 .made__data-description {
   &-1 {
-    color: #000;
+    color: $color-black;
     @extend %dmSans-700;
     font-size: 12px;
     line-height: 1.7;
@@ -283,7 +283,7 @@
   }
 
   &-2 {
-    color: #000;
+    color: $color-black;
     @extend %dmSans-700;
     font-size: 12px;
     line-height: 1.7;
@@ -309,7 +309,7 @@
   }
 
   &-3 {
-    color: #000;
+    color: $color-black;
     @extend %dmSans-700;
     font-size: 12px;
     line-height: 1.7;
