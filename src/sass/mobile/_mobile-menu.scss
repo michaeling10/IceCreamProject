@@ -38,18 +38,18 @@
   }
 
   & .menu__icon {
-    fill: black;
+    fill: $color-red-1;
   }
 
   &:hover .menu__icon,
   &:focus .menu__icon {
-    fill: blue;
+    fill: $color-red-1;
   }
 }
 
 // Base styles for .mobile__link--active
 .mobile__link--active {
-  color: blue !important;
+  color: $color-red-1 !important;
 }
 
 // Base styles for .menu-container
@@ -58,9 +58,9 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 155vh;
   padding: 50px 40px;
-  background-color: red;
+  background-color: $color-mobile;
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -68,20 +68,24 @@
   &.is-open {
     transform: translateX(0);
   }
-
+  
   & .menu-toggle {
     position: absolute;
     top: 16px;
     right: 16px;
-    color: red;
   }
 }
 
-.mobile__menu {
-  height: 87vh;
+.mobile-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile__linea {
+  border: 1px solid $color-mobile-1;
+  width: 100vw;
+  margin: 0;
 }
 
 // Base styles for .mobile-menu
@@ -95,86 +99,26 @@
   justify-content: space-between;
 
   & .link {
-    display: block;
-    padding-bottom: 32px;
-    color: red;
+    width: 254px;
+    margin-left:30%;
+    color: $color-white;
     text-decoration: none;
-    font-family: Roboto;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.8px;
+    @extend %dmSans-700;
+    font-size: 14px;
+    line-height: 18.23px;
+    height: 42px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 
     &:hover,
     &:focus {
-      color: blue;
+      color: $color-red-1;
     }
+  }
+
+  &__current{
+    color: #D41443;
   }
 }
 
-// Base styles for .mobile__phone-mail
-.mobile__phone-mail {
-  padding: 64px 0;
-  margin: 0;
-  list-style: none;
-
-  & li {
-    margin-top: 32px;
-  }
-
-  & li a {
-    text-decoration: none;
-
-    &.mobile__mail__link {
-      color: red;
-      font-family: Roboto;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: 0.48px;
-    }
-
-    &.mobile__phone__link {
-      color: blue;
-      font-family: Roboto;
-      font-size: 34px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: 0.68px;
-    }
-  }
-}
-
-// Base styles for .mobile__social-networks
-.mobile__social-networks {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  & li {
-    display: inline-block;
-
-    &:not(:last-child)::after {
-      content: "|";
-      color: rgba(33, 33, 33, 0.2);
-      transform: translateY(-50%);
-      font-size: 22px;
-      font-weight: bold;
-      padding: 0 5px;
-    }
-  }
-
-  & li a {
-    text-decoration: none;
-    color: blue;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.22;
-    letter-spacing: 0.36px;
-  }
-}
