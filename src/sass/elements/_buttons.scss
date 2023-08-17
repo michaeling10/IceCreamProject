@@ -27,6 +27,8 @@
   flex-direction: row;
   list-style: none;
   padding-left: 0;
+  gap: 8px;
+  margin: 20px 0 0;
 
   @media screen and (min-width: 768px) {
     gap: 9px;
@@ -72,8 +74,8 @@
     color: $color-red-1;
     text-align: center;
     cursor: pointer;
-    width: 138px;
-    height: 40px;
+    width: 82.8px;
+    height: 24px;
     font-size: 8px;
 
     @media screen and (min-width: 768px) {
