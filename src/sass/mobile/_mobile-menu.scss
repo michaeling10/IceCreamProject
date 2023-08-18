@@ -93,8 +93,12 @@
 
 .mobile__line {
   border: 1px solid $color-mobile-1;
-  width: 100vw;
+  width: 100%;
   margin: 0;
+}
+
+.mobile__menu{
+  width: 100%;
 }
 
 .mobile__menu-sections{
@@ -112,6 +116,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 
   & .link {
     width: 254px;
