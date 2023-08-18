@@ -5,12 +5,37 @@
 
   &__components {
     position: absolute;
-    z-index: 2;
-    top: 37px;
+    z-index: 3;
     @extend %flex-space-between;
+    top: 8px;
+
+    @media screen and (min-width: 768px) {
+      top: 32px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      top: 37px;
+    }
   }
 
   &__middle-section {
-    @extend %flex-space-between;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  &__right-section{
+
+    display: flex;
+    align-items: center;
+    stroke: $color-red-1;
+
+    &__btn-buy-now{
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
   }
 }
+

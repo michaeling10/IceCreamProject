@@ -6,7 +6,7 @@
   height: 44px;
   border: none;
   border-radius: 22px;
-  background: $color-white;
+  background-color: $color-white;
 
   /* Type text */
   color: $color-red-1;
@@ -26,36 +26,68 @@
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: 12px;
   padding-left: 0;
-  margin: 24px 0 40px;
+  gap: 8px;
+  margin: 20px 0 0;
+
+  @media screen and (min-width: 768px) {
+    gap: 9px;
+    margin: 20px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 12px;
+    margin: 24px 0 40px;
+  }
 }
 
 .intro__button {
   &__product {
-    width: 107px;
-    height: 40px;
     border: none;
     border-radius: 20px;
-    background: $color-red-1;
-    @extend %dmSans-400;
-    color: $color-white;
-    text-align: center;
-    font-size: 14px;
-    cursor: pointer;
-  }
-
-  &__made {
-    width: 138px;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    background: $color-white;
+    background-color: $color-white;
     @extend %dmSans-400;
     color: $color-red-1;
     text-align: center;
-    font-size: 14px;
     cursor: pointer;
+    width: 63px;
+    height: 24px;
+    font-size: 8px;
+
+    @media screen and (min-width: 768px) {
+      width: 64px;
+      height: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 107px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  &__made {
+    border: none;
+    border-radius: 20px;
+    background-color: $color-white;
+    @extend %dmSans-400;
+    color: $color-red-1;
+    text-align: center;
+    cursor: pointer;
+    width: 82.8px;
+    height: 24px;
+    font-size: 8px;
+
+    @media screen and (min-width: 768px) {
+      width: 84px;
+      height: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 138px;
+      height: 40px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -64,12 +96,17 @@
     display: flex;
     justify-content: left;
     flex-direction: column;
-    width: 26px;
-    height: 26px;
+    width: 18px;
+    height: 18px;
     border: none;
     cursor: pointer;
     padding: 0;
     background: transparent;
+
+    @media screen and (min-width: 1200px) {
+      width: 26px;
+      height: 26px;
+    }
   }
 
   &-info-btn-img {
@@ -96,6 +133,7 @@
 }
 
 /* Seciton-3  */
+
 .made__info-description__btn {
   width: 176px;
   height: 44px;
@@ -108,7 +146,7 @@
   gap: 11px;
 
   /* text */
-  color: #d41443;
+  color: $color-red-1;
   text-align: center;
   @extend %dmSans-700;
   font-size: 16px;
@@ -117,10 +155,145 @@
     @extend %flex-center;
     width: 7.5px;
     height: 10px;
+    stroke: $color-red-1;
   }
 
-  &-svg{
+  &-svg {
     width: 100%;
     height: 100%;
   }
 }
+
+/* Section - 5 */
+
+.locations__buttons {
+  @extend %flex-center;
+}
+
+.locations__buttons-list {
+  @extend %flex-center;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 14.5px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 12px;
+  }
+}
+
+.locations__buttons-btn-1__btn {
+  @extend %flex-center;
+  flex-direction: row;
+  border-radius: 22px;
+  background: $color-white;
+  width: 161.45px;
+  height: 44px;
+  cursor: pointer;
+  border: none;
+  gap: 12px;
+
+  /*Text*/
+  color: $color-red-1;
+  @extend %dmSans-700;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0em;
+
+  @media screen and (min-width: 768px) {
+    width: 191.45px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 198px;
+  }
+}
+
+.locations__buttons-btn-1__btn-icon,
+.locations__buttons-btn-2__btn-icon {
+  width: 8px;
+  height: 12px;
+  @extend %flex-center;
+}
+
+.locations__buttons-btn-1__btn-svg,
+.locations__buttons-btn-2__btn-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.locations__buttons-btn-2__btn {
+  @extend %flex-center;
+  flex-direction: row;
+  border-radius: 22px;
+  background: $color-white;
+  width: 161.45px;
+  height: 44px;
+  cursor: pointer;
+  border: none;
+  gap: 12px;
+
+  /*Text*/
+  color: $color-red-1;
+  @extend %dmSans-700;
+  text-align: center;
+  font-size: 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 191.45px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 198px;
+  }
+}
+
+.locations__buttons-btn-1__btn--svg, .locations__buttons-btn-2__btn-svg, .btn-2{
+  stroke: $color-red-1;
+}
+
+
+// Button Mobile
+.button__mobile {
+  height: 44px;
+  width: 209px;
+
+  @extend %flex-center;
+  color: $color-red-1;
+  text-align: center;
+  cursor: pointer;
+  background-color: $color-white;
+  border: none;
+  border-radius: 22px;
+  gap: 12px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.mobile {
+  &__btn-icon {
+    @extend %flex-center;
+    width: 6px;
+    height: 10px;
+    stroke: $color-red-1;
+  }
+
+  &__btn-buy {
+    width: 100%;
+    height: 100%;
+  }
+}
+

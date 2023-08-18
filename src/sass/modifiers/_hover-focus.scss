@@ -1,0 +1,108 @@
+/* Header */
+.header__right-section__btn-buy-now:hover,
+.header__right-section__btn-buy-now:focus {
+  /* Button */
+  background-color: $color-red-1;
+
+  /* Type text */
+  color: $color-white;
+}
+
+/* Navbar */
+
+.navbar {
+  &__link:hover,
+  &__link:focus {
+    color: $color-red-1;
+  }
+}
+
+/* 1  - Section */
+.intro__button {
+  &__product:hover,
+  &__product:focus {
+    background-color: $color-red-1;
+    color: $color-white;
+  }
+
+  &__made:hover,
+  &__made:focus {
+    background-color: $color-red-1;
+    color: $color-white;
+  }
+}
+
+.header__right-section:hover,
+.header__right-section:focus {
+  stroke: $color-white;
+}
+
+/* 3  - Section */
+.made__info-description__btn:hover,
+.made__info-description__btn:focus {
+  background-color: $color-red-1;
+  /* text */
+  color: $color-white;
+
+  &-svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.made__info-description__btn:hover .made__info-description__btn-icon,
+.made__info-description__btn:focus .made__info-description__btn-icon {
+  stroke: $color-white;
+}
+
+/* 4  - Section */
+
+.testimonial_commentseparator-svg:hover, .testimonialcomment_menu-svg:hover{
+  cursor: pointer;
+}
+
+/* 5  - Section */
+.locations__buttons-btn-1__btn:hover,
+.locations__buttons-btn-2__btn:hover,
+.locations__buttons-btn-1__btn:focus,
+.locations__buttons-btn-2__btn:focus {
+  background-color: $color-red-1;
+  color: $color-white;
+}
+
+.locations__buttons-list:hover .locations__buttons-btn-1__btn--svg {
+  stroke: $color-white;
+}
+
+.locations__buttons-list:hover .btn-2 {
+  stroke: $color-white;
+}
+
+.location-card__contact-item a:hover,
+.location-card__contact-item a:focus {
+  color: $color-red-1;
+}
+
+/* Footer */
+
+.footer__contacts-social-network:hover .footer__contacts-social-network-svg,
+.footer__contacts-social-network:focus .footer__contacts-social-network-svg{
+  fill: $color-red-1;
+}
+
+
+/* Mobile */
+.button__mobile:hover,
+.button__mobile:focus {
+  color: $color-white;
+  background-color: $color-red-1;
+
+  & .mobile__btn-icon {
+    stroke: $color-white;
+  }
+}
+
+.menu-toggle-2:hover .menu__icon-2,
+.menu-toggle-2:focus .menu__icon-2 {
+  stroke: $color-red-1;
+}

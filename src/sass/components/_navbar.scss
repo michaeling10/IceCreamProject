@@ -4,7 +4,16 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 35px;
+
+    @media screen and (min-width: 1200px) {
+      gap: 35px;
+      
+    }
+
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+
   }
 
   &__link {
