@@ -60,7 +60,7 @@
   left: 0;
   width: 100vw;
   height: 155vh;
-  padding: 50px 40px;
+  padding: 50px 0 0;
   background-color: $color-mobile;
   z-index: 999;
   transform: translateX(100%);
@@ -81,6 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 0 20px;
 }
 
 .mobile__linea {
