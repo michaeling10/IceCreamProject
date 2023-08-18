@@ -2,13 +2,16 @@
   display: flex;
   justify-content: center;
   background-color: $color-pink-2;
-  height: 684px;
+  height: 470px;
   width: auto;
+
+ 
 }
 
 .locations_section {
   margin: 0 0 60px;
-  height: 558px;
+  
+  
 }
 
 .locations_components {
@@ -16,46 +19,108 @@
   flex-direction: column;
   height: auto;
   position: relative;
-  top: -99px;
+  top: -320px;
+  align-items: center;
+
+  @media screen and (min-width:768px) {
+    top: -315px;
+    margin-top:50px;
+  }
+  @media screen and (min-width:1200px) {
+    top: -90px;
+    margin-top:0;
+  }
+
 }
 
+//box container//
 .locations__list {
   display: flex;
-  flex-direction: row;
-  gap: 32px;
+  flex-direction: column;
+  gap: 20px;
   padding: 0;
-  margin: 0;
+  
+  @media screen and (min-width:768px) {
+    flex-direction: row;
+  }
+  
 }
-
+//box//
 .location_card {
-  width: 368px;
+  width: 280px;
+  height: 412px;
   list-style: none;
   background-color: $color-white;
   border-radius: 24px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+
+  @media screen and (min-width:768px) {
+    width: 224px;
+    height: 528px;
+  }
+  @media screen and (min-width:1200px) {
+    width: 368px;
+    height: 538px;
+  }
+
 }
 
 .location_card__margin {
-  padding: 40px;
+  padding: 32px;
+  @media screen and (min-width:768px) {
+    
+  }
+  @media screen and (min-width:1200px) {
+    padding: 40px
+  }
+
 }
 
 .location_card__title-1 {
   color: $color-white;
   @extend %dmSans-500;
-  font-size: 16px;
-  line-height: 1.86;
-  letter-spacing: 0.64px;
   border-radius: 6px;
   background: #f0d1a5;
-  width: 75.103px;
-  height: 28px;
+  width: 80px;
+  height: 16px;
   @extend %flex-center;
-  margin: 0 0 32px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px 0px 0px 0px;
+  
+  @media screen and (min-width:768px) {
+      
+    width: 75.103px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 1.86;
+    margin: 0 0 32px;
+    letter-spacing: 0.64px;
+  }
 }
 
 .location_card__title-2 {
   color: $color-white;
   @extend %dmSans-500;
+  
+ 
+  
+  border-radius: 6px;
+  background: #c2e297;
+  width: 130px;
+  height: 16px;
+  @extend %flex-center;
+  margin: 0 0 20px;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  
+
+
+  @media screen and (min-width:768px) {
+       
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.64px;
@@ -63,26 +128,48 @@
   background: #c2e297;
   width: 138px;
   height: 28px;
-  @extend %flex-center;
   margin: 0 0 32px;
+  }
 }
 
 .location-card__city {
   color: #000;
   @extend %dmSans-500;
-  font-size: 16px;
-  line-height: 1.86;
-  letter-spacing: 0.64px;
-  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  font-family: DM Sans;
+  
+  @media screen and (min-width:768px) {
+      
+  }
+  @media screen and (min-width:1200px) {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.64px;
+    margin: 0 0 8px;
+  }
+
 }
 
 .location-card__services {
   color: #907e82;
   @extend %dmSans-500;
-  font-size: 16px;
-  line-height: 1.83;
-  letter-spacing: 0.64px;
-  margin: 0 0 32px;
+  margin-top:8px ;
+  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  
+
+  @media screen and (min-width:768px) {
+      
+  }
+  @media screen and (min-width:1200px) {
+    font-size: 16px;
+    line-height: 1.83;
+    letter-spacing: 0.64px;
+    margin: 0 0 32px;
+  }
 }
 
 .location-card__separator {
@@ -97,7 +184,13 @@
 }
 
 .location-card__schedule {
-  margin: 32px 0;
+  margin: 24px 0;
+  @media screen and (min-width:768px) {
+      
+  }
+  @media screen and (min-width:1200px) {
+    margin: 32px 0;
+  }
 }
 
 .location-card__schedule-list {
@@ -106,27 +199,58 @@
   gap: 12px;
   display: flex;
   flex-direction: column;
+  @media screen and (min-width:768px) {
+      
+  }
+  @media screen and (min-width:1200px) {
+    margin: 32px 0;
+  }
 }
 
 .location-card__schedule-days {
   color: #000;
   @extend %dmSans-500;
-  font-size: 16px;
-  line-height: 1.86;
-  letter-spacing: 0.64px;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0em;
   margin: 0;
+
+  @media screen and (min-width:768px) {
+      
+  }
+  @media screen and (min-width:1200px) {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.64px;
+    
+  }
 }
 
 .location-card__schedule-hours {
   color: #ffa5ba;
   @extend %dmSans-500;
-  font-size: 16px;
-  line-height: 1.86;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0em;
   margin: 0;
+  
+  
+  @media screen and (min-width:768px) {
+      
+  }
+  @media screen and (min-width:1200px) {
+    font-size: 16px;
+    line-height: 1.86;
+    
+  }
 }
 
 .location-card__contact-info {
-  margin: 32px 0 0;
+  margin: 24px 0 0;
+  @media screen and (min-width:768px) {
+    margin: 32px 0 0;
+  }
+  
 }
 
 .location-card__contact-info-list {
@@ -136,8 +260,19 @@
 
 .location-card__contact-item {
   @extend %dmSans-500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0em;
+  
+@media screen and (min-width:768px) {
+  font-size: 14px;
+  line-height: 26px;
+  
+}
+@media screen and (min-width:1200px) {
   font-size: 16px;
   line-height: 1.83;
+}
 }
 
 .location-card__contact-item a {
@@ -147,31 +282,57 @@
 
 .locations__buttons {
   @extend %flex-center;
+ 
 }
 
 .locations__buttons-list {
   @extend %flex-center;
-  flex-direction: row;
+  flex-direction: column;
   list-style: none;
-  gap: 12px;
+  gap: 10px;
+  padding: 0;
+
+  @media screen and (min-width:768px) {
+    flex-direction: row;
+    gap: 14.5px;
+  }
+  @media screen and (min-width:1200px) {
+    gap: 12px;
+  }
+
+
+
 }
 
 .locations__buttons-btn-1__btn {
   @extend %flex-center;
   flex-direction: row;
   border-radius: 22px;
-  background: #d41342;
-  width: 198px;
+  background: $color-white;
+  width: 161.45px;
   height: 44px;
   cursor: pointer;
   border: none;
   gap: 12px;
 
   /*Text*/
-  color: $color-white;
+  color: $color-red-1;
   @extend %dmSans-700;
   text-align: center;
   font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0em;
+  
+  @media screen and (min-width:768px) {
+    width: 191.45px;
+    
+  }
+  @media screen and (min-width:1200px) {
+    width: 198px;
+    
+  }
+
+
 }
 
 .locations__buttons-btn-1__btn-icon,
@@ -182,7 +343,7 @@
 }
 
 .locations__buttons-btn-1__btn-svg,
-.locations__buttons-btn-1__btn-svg {
+.locations__buttons-btn-2__btn-svg {
   width: 100%;
   height: 100%;
 }
@@ -192,15 +353,46 @@
   flex-direction: row;
   border-radius: 22px;
   background: $color-white;
-  width: 198px;
+  width: 161.45px;
   height: 44px;
   cursor: pointer;
   border: none;
   gap: 12px;
 
   /*Text*/
-  color: #d41342;
+  color: $color-red-1;
   @extend %dmSans-700;
   text-align: center;
   font-size: 16px;
+  
+  @media screen and (min-width:768px) {
+    width: 191.45px;
+    
+  }
+  @media screen and (min-width:1200px) {
+    width: 198px;
+    
+  }
+
+
+}
+
+
+.locations__buttons-btn-1__btn--svg, .locations__buttons-btn-2__btn-svg, .btn-2{
+  stroke: $color-red-1;
+}
+
+
+.locations__buttons-btn-1__btn:hover, .locations__buttons-btn-2__btn:hover{
+  background-color: $color-red-1;
+  color: $color-white;
+ 
+}
+
+.locations__buttons-list:hover .locations__buttons-btn-1__btn--svg{
+  stroke: $color-white;
+}
+
+.locations__buttons-list:hover .btn-2{
+  stroke: $color-white;
 }

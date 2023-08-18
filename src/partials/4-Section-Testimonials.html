@@ -1,18 +1,67 @@
 <section class="section-testimonials">
   <div class="testimonial_components container">
     <div class="testimonial__image-people">
-      <img
-        class="testimonial__image-people-img"
-        src="./images/section_4_testimonials/section-4-people.png"
-        alt="section-4-people"
-      />
+      <picture class="testimonial__image-people-img">
+          <source
+            srcset="
+            ./images/section_4_testimonials/section-4-people-desktop.png    1x,
+            ./images/section_4_testimonials/section-4-people-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+            ./images/section_4_testimonials/section-4-people-tablet.png    1x,
+            ./images/section_4_testimonials/section-4-people-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+            ./images/section_4_testimonials/section-4-people-mobile.png    1x,
+            ./images/section_4_testimonials/section-4-people-mobile@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/section_4_testimonials/section-4-people-desktop.png"
+            alt="section-4-people"
+          />
+        </picture>
+        
     </div>
+    
     <div class="testimonial__pictures">
-      <img
-        class="testimonial__picture"
-        src="./images/section_4_testimonials/section-4-picture-1.png"
-        alt="section-4-picture-1"
-      />
+
+      <picture class="testimonial__picture">
+        <source
+            srcset="
+            ./images/section_4_testimonials/section-4-picture-1.png    1x,
+            ./images/section_4_testimonials/section-4-picture-1@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+            ./images/section_4_testimonials/section-4-picture-1.png    1x,
+            ./images/section_4_testimonials/section-4-picture-1@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+            ./images/section_4_testimonials/section-4-picture-1.png    1x,
+            ./images/section_4_testimonials/section-4-picture-1@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+        <img
+          src="./images/section_4_testimonials/section-4-picture-1.png"
+          alt="section-4-picture-1"
+          
+        />
+      </picture>
+     
     </div>
     <div class="testimonial__comment">
       <div class="testimonial__comment-back-box">
@@ -36,11 +85,22 @@
           </ul>
         </div>
       </div>
-      <span class="testimonial__comment-1">
-        I love visiting your cafe. You prepare the most delicious ice cream in
-        Los Angeles! In addition, you have beautiful serving, cozy atmosphere
-        and polite staff.
-      </span>
+      <div class="testimonial__mobile-lines">
+        <hr class="hr-mobile"><hr class="hr-mobile">
+        <hr class="hr-mobile"><hr class="hr-mobile">
+        <hr class="hr-mobile"><hr class="hr-mobile">
+        <hr class="hr-mobile">
+      </div>
+      <div class="testimonial__tablet-lines">
+        <hr class="hr-tablet"><hr class="hr-tablet">
+        <hr class="hr-tablet">
+      </div>
+      
+        <span class="testimonial__comment-1">
+          I love visiting your cafe. You prepare the most delicious ice cream in
+          Los Angeles! In addition, you have beautiful serving, cozy atmosphere
+          and polite staff.
+        </span>
     </div>
     <div class="testimonial__comment__separator">
       <svg class="testimonial__comment__separator-svg">
