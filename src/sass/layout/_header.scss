@@ -5,8 +5,10 @@
 
   &__components {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     @extend %flex-space-between;
+    top: 8px;
+
     @media screen and (min-width: 768px) {
       top: 32px;
     }
@@ -18,5 +20,11 @@
 
   &__middle-section {
     @extend %flex-space-between;
+  }
+
+  &__right-section{
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
