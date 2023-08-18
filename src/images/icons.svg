@@ -105,9 +105,10 @@
     </g>
   </symbol>
 	
-  <symbol width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" id="close-menu">
-	<path d="M1.25928 1L14.7408 15" />
-	<path d="M1 14.7407L15 1.25924" />
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="close-menu">
+    <g>
+      <path d="m1.26 1 13.48 14M1 14.74 15 1.26"></path>
+    </g>
   </symbol>
   
 </svg>

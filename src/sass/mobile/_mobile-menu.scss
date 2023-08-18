@@ -44,7 +44,6 @@
     @media screen and (min-width: 768px) {
       margin: 24px;
     }
-
   }
 
   &:hover .menu__icon,
@@ -65,22 +64,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 50px 0 0;
+  padding: 20px 0 0;
   background-color: $color-mobile;
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
   &.is-open {
     transform: translateX(0);
-  }
-  
-  & .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
   }
 }
 
@@ -88,16 +84,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 20px;
+  margin: 26px 0 20px;
 }
 
 .mobile__line {
   border: 1px solid $color-mobile-1;
-  width: 100vw;
+  width: 100%;
   margin: 0;
 }
 
-.mobile__menu-sections{
+.mobile__menu {
+  width: 100%;
+}
+
+.mobile__menu-sections {
   display: flex;
   justify-content: center;
 }
@@ -112,6 +112,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 
   & .link {
     width: 254px;
@@ -132,11 +133,33 @@
     }
   }
 
-  &__current{
-    color:$color-red-1;
+  &__current {
+    color: $color-red-1;
   }
 }
 
+.menu-cotainer__btn-close {
+  display: flex;
+  justify-content: flex-end;
+  width: 209px;
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
+}
 
+.menu-toggle-2 {
+  @extend %flex-center;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
 
-
+.menu__icon-2 {
+  stroke: $color-white;
+  width: 100%;
+  height: 100%;
+}
