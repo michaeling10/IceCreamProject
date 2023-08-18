@@ -277,24 +277,3 @@
   text-decoration: none;
   color: #907e82;
 }
-
-
-
-.locations__buttons-btn-1__btn--svg, .locations__buttons-btn-2__btn-svg, .btn-2{
-  stroke: $color-red-1;
-}
-
-
-.locations__buttons-btn-1__btn:hover, .locations__buttons-btn-2__btn:hover{
-  background-color: $color-red-1;
-  color: $color-white;
- 
-}
-
-.locations__buttons-list:hover .locations__buttons-btn-1__btn--svg{
-  stroke: $color-white;
-}
-
-.locations__buttons-list:hover .btn-2{
-  stroke: $color-white;
-}
