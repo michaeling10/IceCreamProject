@@ -99,8 +99,11 @@
     <path stroke="#E1E1E1" d="M0 1h1167"></path>
   </symbol>
   
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" id="mobile-menu">
-    <path fill-rule="evenodd" d="M0 2.667V0h24v2.667H0Zm0 6.666h24V6.667H0v2.666ZM0 16h24v-2.667H0V16Z" clip-rule="evenodd"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 14" id="mobile-menu">
+    <g stroke="#D41443">
+      <path d="M0 1h20M0 7h20M0 13h20"></path>
+    </g>
   </symbol>
+
   
 </svg>

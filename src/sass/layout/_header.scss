@@ -19,12 +19,19 @@
   }
 
   &__middle-section {
-    @extend %flex-space-between;
+    display: flex;
+    justify-content: end;
+    align-items: center;
   }
 
   &__right-section{
+
+    display: flex;
+    align-items: center;
+
     @media screen and (max-width: 767px) {
       display: none;
     }
   }
 }
+
