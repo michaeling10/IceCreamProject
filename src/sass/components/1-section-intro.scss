@@ -20,7 +20,7 @@
   align-items: end;
   height: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -38,6 +38,11 @@
   &__left {
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 767px) {
+      z-index: 2;
+      padding: 0 0 158px;
+    }
   }
 
   &__title {
@@ -64,8 +69,7 @@
 
     &-2 {
       @extend %titan-400;
-      letter-spacing: 2.32px;
-      font-size: 58px;
+      font-size: 48px;
       color: $color-red-1;
       line-height: 0.965;
 
@@ -77,6 +81,8 @@
 
       @media screen and (min-width: 1200px) {
         line-height: 0.905;
+        letter-spacing: 2.32px;
+        font-size: 58px;
       }
     }
   }
@@ -219,6 +225,15 @@
     width: 171px;
     height: 410px;
 
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      z-index: 1;
+      width: 171px;
+      height: 410px;
+      right: 32px;
+      top: 92px;
+    }
+
     @media screen and (min-width: 768px) {
       width: 143px;
       height: 336px;
@@ -236,6 +251,10 @@
     display: flex;
     justify-content: end;
 
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
     @media screen and (min-width: 768px) {
       width: 190px;
       height: 150px;
@@ -250,6 +269,9 @@
   &-circle-back {
     position: absolute;
     z-index: -1;
+    width: 346px;
+    top: 83px;
+    right: -62px;
 
     @media screen and (min-width: 768px) {
       width: 335px;
@@ -270,6 +292,10 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
 
     @media screen and (min-width: 768px) {
       top: 77px;
