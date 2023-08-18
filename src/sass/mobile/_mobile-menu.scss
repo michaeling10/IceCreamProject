@@ -39,6 +39,7 @@
 
   & .menu__icon {
     fill: $color-red-1;
+    margin: 0 36px 0 250px;
   }
 
   &:hover .menu__icon,
@@ -118,7 +119,7 @@
   }
 
   &__current{
-    color: #D41443;
+    color:$color-red-1;
   }
 }
 
