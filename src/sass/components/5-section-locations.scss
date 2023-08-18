@@ -78,7 +78,7 @@
   color: $color-white;
   @extend %dmSans-500;
   border-radius: 6px;
-  background: #f0d1a5;
+  background: $color-yellow-1;
   width: 80px;
   height: 16px;
   @extend %flex-center;
@@ -106,7 +106,7 @@
  
   
   border-radius: 6px;
-  background: #c2e297;
+  background: $color-green-1;
   width: 130px;
   height: 16px;
   @extend %flex-center;
@@ -114,16 +114,12 @@
   font-size: 12px;
   line-height: 22px;
   letter-spacing: 0.04em;
-  
 
-
-  @media screen and (min-width:768px) {
-       
+  @media screen and (min-width:768px) {      
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.64px;
   border-radius: 6px;
-  background: #c2e297;
   width: 138px;
   height: 28px;
   margin: 0 0 32px;
@@ -131,7 +127,7 @@
 }
 
 .location-card__city {
-  color: #000;
+  color: $color-black;
   @extend %dmSans-500;
   font-size: 12px;
   letter-spacing: 0.04em;
@@ -150,7 +146,7 @@
 }
 
 .location-card__services {
-  color: #907e82;
+  color: $color-red-2;
   @extend %dmSans-500;
   margin-top:8px ;
   margin-bottom: 24px;
@@ -206,7 +202,7 @@
 }
 
 .location-card__schedule-days {
-  color: #000;
+  color: $color-black;
   @extend %dmSans-500;
   font-size: 12px;
   line-height: 22px;
@@ -225,7 +221,7 @@
 }
 
 .location-card__schedule-hours {
-  color: #ffa5ba;
+  color: $color-pink-3;
   @extend %dmSans-500;
   font-size: 12px;
   line-height: 22px;
@@ -275,5 +271,5 @@
 
 .location-card__contact-item a {
   text-decoration: none;
-  color: #907e82;
+  color: $color-red-2;
 }
