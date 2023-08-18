@@ -104,6 +104,10 @@
       <path d="M0 1h20M0 7h20M0 13h20"></path>
     </g>
   </symbol>
-
+	
+  <symbol width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" id="close-menu">
+	<path d="M1.25928 1L14.7408 15" />
+	<path d="M1 14.7407L15 1.25924" />
+  </symbol>
   
 </svg>
